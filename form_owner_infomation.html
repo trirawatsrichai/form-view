@@ -1,0 +1,149 @@
+<!-- ข้อมูลผู้ครอบคลอง -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ข้อมูลผู้ครอบครอง</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 100%;
+        font-family: 'Sarabun', sans-serif;
+      }
+
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        padding: 2px 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="container">
+        <table width="100%">
+          <thead>
+            <tr>
+              <th style="background-color: #9999ff">
+                <div style="float:left"><i class="fa-solid fa-user-group"></i> ข้อมูลผู้ครอบครอง</div>
+                <div style="float:right">
+                  <button><i class="fa-solid fa-user-plus"></i> สร้างใหม่</button>
+                  <button onclick="myFunction_hide()">hide/show</button>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          
+          <tbody id="hide_table_tbody">
+            <tr>
+              <td>
+                <div class="row">
+                <select name="" id="">
+                  <option value="">-- เลือกใช้ข้อมูลผู้ครอบครอง --</option>
+                </select>
+              </div>
+              <div class="row">
+                
+               <label for="">ประเภทบุคคลธรรมดา</label>
+               <select name="" id="">
+                <option value="">บุคลธรรมดา</option>
+               </select>
+               <label for="">คำนำหน้าชื่อ
+                <select name="" id="">
+                  <option value="">นางสาว</option>
+                </select>
+               </label>
+               <label for="">ชื่อ
+                <input type="text">
+               </label>
+               <label for="">สกุล
+                <input type="text">
+               </label>
+              </div>
+              <div class="row">
+                <label for="">เลขที่บัตร (ปชช)
+                  <input type="text">
+                </label>
+                <label for="">เบอร์โทรติดต่อ
+                  <input type="text">
+                </label>
+              </div>
+              <div class="row">
+                <label for="">บ้านเลขที่
+                  <input type="text">
+                </label>
+                <label for="">
+                  หมู่ที่
+                  <input type="text">
+                </label>
+                <label for="">
+                  ชุมชน
+                  <input type="text">
+                </label>
+              </div>
+              <div class="row">
+                <label for="">ถนน
+                  <input type="text">
+                </label>
+                <label for="">ซอย
+                  <input type="text">
+                </label>
+              </div>
+              <div class="row">
+                <label for="">จัดหวัด
+                  <select name="" id="">
+                    <option value="">-- จังหวัด --</option>
+                  </select>
+                </label>
+                <label for="">อำเภอ
+                  <select name="" id="">
+                    <option value="">
+                      -- อำเภอ --
+                    </option>
+                  </select>
+                </label>
+              </div>
+              <div class="row">
+                <label for="">ตำบล
+                  <select name="" id="">
+                    <option value="">-- ตำบล --</option>
+                  </select>
+                </label>
+                <label for="">
+                  รหัสไปรษณีย์
+                  <input type="text">
+                </label>
+              </div>
+              </td>
+            </tr>
+          </tbody>
+        
+        </table>
+      </div>
+    </div>
+
+    <script>
+      function myFunction_hide() {
+        var x = document.getElementById("hide_table_tbody");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      </script>
+  </body>
+</html>
